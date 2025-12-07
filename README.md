@@ -1,73 +1,16 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Download metamask browser extension: https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn (for chrome)
+2. Create 2 accounts
+3. Add BNB Smart Chain Testnet to metamask
+  - <img width="795" height="1199" alt="image" src="https://github.com/user-attachments/assets/7b15ce9a-6f84-456d-89ef-d0483cd5d643" />
+  - <img width="793" height="1199" alt="image" src="https://github.com/user-attachments/assets/83bde5c5-44aa-4914-b638-ced4fd0150d3" />
+  - <img width="793" height="1199" alt="image" src="https://github.com/user-attachments/assets/653483c3-4689-4eba-81c7-974c2b039c1d" />
+  Click save, then select this testnet:
+  - <img width="793" height="1199" alt="image" src="https://github.com/user-attachments/assets/6c302633-ab44-4a58-8f99-b705921719a1" />
+4. Copy your wallet address and get tBNB tokens from https://ghostchain.io/faucet/bnb-testnet/
+  - <img width="793" height="1199" alt="image" src="https://github.com/user-attachments/assets/7a0acd18-465d-4490-b24d-ae2a095f344f" />
+  - <img width="801" height="1197" alt="image" src="https://github.com/user-attachments/assets/233aa510-3745-44fc-9ec1-cc930f6d6234" />
+  - <img width="1013" height="1423" alt="image" src="https://github.com/user-attachments/assets/664f3efa-bbd4-4b14-94e2-96a70400f957" />
+5. Open 2 browser windows with 2 different metamask accounts
+6. Open terminal in project folder, type `npm run dev`
+7. Open http://localhost:5173/ and test
+8. Smart contract should be opened in Remix IDE - https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.30+commit.73712a01.js
