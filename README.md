@@ -11,6 +11,7 @@
   - <img width="801" height="1197" alt="image" src="https://github.com/user-attachments/assets/233aa510-3745-44fc-9ec1-cc930f6d6234" />
   - <img width="1013" height="1423" alt="image" src="https://github.com/user-attachments/assets/664f3efa-bbd4-4b14-94e2-96a70400f957" />
 5. Open 2 browser windows with 2 different metamask accounts
-6. Open terminal in project folder, type `npm run dev`
-7. Open http://localhost:5173/ and test
-8. Smart contract should be opened in Remix IDE - https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.30+commit.73712a01.js
+6. Install nodejs - https://nodejs.org/en
+7. Open terminal in project folder, type `npm run dev`
+8. Open http://localhost:5173/ and test
+9. Smart contract should be opened in Remix IDE - https://remix.ethereum.org/#lang=en&optimize&runs=200&evmVersion&version=soljson-v0.8.30+commit.73712a01.js
