@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.connect-btn, .action-btn {
+  background: #5a67d8;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(90, 103, 216, 0.4);
+  transition: all 0.3s;
+  margin: 15px;
+}
+
+.connect-btn:hover, .action-btn:hover {
+  background: #4c51bf;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(90, 103, 216, 0.6);
+}
+
+.action-btn.green { background: #48bb78; }
+.action-btn.green:hover { background: #38a169; }
+.action-btn.red { background: #e53e3e; }
+.action-btn.red:hover { background: #c53030; }
+.action-btn.purple { background: #9f7aea; }
+.action-btn.purple:hover { background: #805ad5; }
+
+.move-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.move-btn {
+  background: rgba(255,255,255,0.15);
+  border: 3px solid transparent;
+  padding: 40px;
+  border-radius: 30px;
+  font-size: 6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.move-btn:hover {
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.1);
+}
+
+.move-btn.selected {
+  border-color: #ffd700;
+  background: rgba(255,215,0,0.2);
+  box-shadow: 0 0 30px rgba(255,215,0,0.5);
+}
+
+input[type="text"], input[type="number"] {
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: none;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.status {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 20px;
+  margin: 30px 0;
+  backdrop-filter: blur(10px);
+  font-size: 1.4rem;
+}
+
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin: 20px 0;
+}
